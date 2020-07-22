@@ -47,56 +47,6 @@ window.onload = function(){
         }
     });
 
-    // *********************************
-
-    // let getJSON = function(url, callback){
-    //     let xhr = new XMLHttpRequest();
-    //     xhr.open('GET', url, true);
-    //     xhr.responseType = 'json';
-    //     xhr.onload = function(){
-    //         let status = xhr.status;
-    //         if (status === 200) {
-    //             callback(null, xhr.response)
-    //         }
-    //         else {
-    //             callback(status, xhr.response);
-    //         }
-    //     };
-    //     xhr.send();
-    // }
-
-    // getJSON('https://spreadsheets.google.com/feeds/list/13gQsTyLTTpis0IUKm6rfPyDHNd-aFUPHQcN89O6hYAY/od6/public/values?alt=json', function(err, data){
-    //     if (err !== null) {
-    //         alert ('Error: '+err);
-    //     }
-    //     else {
-    //         data = data ['feed']['entry'];
-                  
-    //             // document.querySelector('.advantages-box').innerHTML = showAnoserProducts(data);
-
-    //     }
-    // });
-    
-    // function showAnoserProducts(data) {
-    //     let out = '';
-    //     for(var i=0; i<data.length; i++){
-    //         if (data[i]['gsx$show2']['$t']!=0){
-    //             out += `<div class="advantages-box__info">`;
-    //             out += `<div class="advantages-box__title">`;
-    //             out += `${data[i]['gsx$name2']['$t']}</div>`;
-    //             out += `<div class="advantages-box__text">`
-    //             out += `<p>${data[i]['gsx$description']['$t']}</p>`
-    //             out += `</div>`
-    //             out += `<div class="advantages-box__images">`
-    //             out += `<img src="${data[i]['gsx$image2']['$t']}" alt="member-1">`
-    //             out += `</div>`
-    //             out += `</div>`
-                 
-    //         }
-    //     }
-    //     return out;
-    // }
-
 }
       
 
