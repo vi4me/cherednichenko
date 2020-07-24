@@ -1,20 +1,67 @@
-html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100vh;
-      font-family: Helvetica;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+	line-height: 24px;
+}
 a {
-    text-decoration: none;
+	text-decoration: none;
+	color: inherit;
 }
-
-.wrapper {
-      height: 100vh;
-      width: 100%;
+li {
+	list-style-type: none;
 }
-
+.header {
+	position: relative;
+	overflow: hidden;
+	background: #000200;
+	background-image: url(../images/california-1751455_1280.webp);
+	background-blend-mode: screen;
+	min-height: 550px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+.container {
+	max-width: 1170px;
+	margin-left: auto;
+	/*padding-left: 15px;
+	padding-right: 15px;*/
+}
+.header__top {
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	align-items: center;
+	background-color: rgba(0,0,0,0.2);
+}
+.menu {
+	padding-right: 15px;
+}
+.logo img {
+	width: 80px;
+	height: 60px;
+}
+.menu__list {
+	display: flex;
+}
+.menu__list li+li {
+	padding-left: 50px;
+}
+.menu__list a {
+	opacity: 0.5;
+	color: red;
+	font-weight: 600;
+	text-transform: uppercase;
+	transition: all .5s;
+}
+.menu__list a:hover {
+	opacity: 1;
+}
 .pattern {
       position: absolute;
       left: 20%;
@@ -23,52 +70,6 @@ a {
       background: url(../images/BG_Pattern.png) no-repeat 50% 50%;
       z-index: -1;
       opacity: 0.4;
-}
-
-.nav {
-      width: 100%;
-      height: 80px;
-      position: absolute;
-      z-index: 1;
-}
-
-.logo {
-      font-size: 18px;
-      margin: 0.2em 2em;
-      line-height: 80px;
-      position: absolute;
-}
-
-.logo ion-icon {
-      color: #737373;
-}
-
-
-.menu {
-      position: absolute;
-      height: 80px;
-      right: 120px;
-}
-
-.menu ul li {
-      display: inline-block;
-      margin: 1em 0;
-}
-
-.menu a {
-    font-size: 14px;
-    color: #737373;
-    text-transform: uppercase;
-    transition: all .7s ease 0s;
-    -webkit-transition: all .7s ease 0s;
-    -moz-transition: all .7s ease 0s;
-    -o-transition: all .7s ease 0s;
-    -ms-transition: all .7s ease 0s;
-    padding: 10px 15px;
-    font-weight: bold;
-}
-.menu a:hover {
-    color: red;
 }
 
 .cart {
@@ -136,7 +137,6 @@ a {
       opacity: 0;
       padding-right: 20px;
 }
-
 .title-1 {
       position: absolute;
       top: 38%;
@@ -151,7 +151,6 @@ a {
       z-index: 1;
       opacity: 0;
 }
-
 .content {
       position: absolute;
       top: 54%;
@@ -177,7 +176,7 @@ button {
 .media {
       position: fixed;
       bottom: 50%;
-      left: -10px;
+      left: 20px;
       z-index: 1;
 }
 
@@ -188,15 +187,69 @@ button {
 
 .media ul li {
       color: red;
+      font-size: 30px;
       padding: 10px 0;
 }
-
-.media ion-icon {
-     font-size: 24px;
+.media ul li:nth-child(1) {
+      color: green;
 }
 
-/*******************************/
+.header-slider {
+	padding-top: 111px;
+}
+.header-slider__item {
+	
+}
+.header-slider__item-content {
+	display: flex;
+	justify-content: space-between;
+}
+.header-slider__item-info {
+	color: #fff;
+	max-width: 506px;
+	margin-left: 20px;
+}
+.header-slider__title {
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 60px;
+	margin-bottom: 10px;
+}
+.header-slider__description {
+	line-height: 55px;
+	font-size: 24px;
+	margin-bottom: 60px;
+}
+.header-slider__item-images {
+	margin: 10px 82px 0 0;
+}
+.header-slider__item-images img {
+    width: 350px;
+}
+.header-dots {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}	
+.header-dots button {
+	border: none;
+	background-color: #fff;
+	opacity: 0.5;
+	font-size: 0;
+	padding: 0;
+	width: 7px;
+	height: 7px;
+	border-radius: 3.5px;
+	cursor: pointer;
+	outline: none;
+	margin: 5px;
+	display: block;
 
+}
+.header-dots .slick-active button {
+	width: 15px;
+	opacity: 1;
+}
 .cover {
     padding-bottom: 140px;
     height: 600px;
@@ -293,141 +346,4 @@ button {
   height: 450px;
   width: 500px;
 }
-@media (max-width: 1620px) {
-  .advantages {
-    background-image: none;
-  }
-}
-@media (max-width: 1190px) {
-  
-  .advantages-box__images img {
-    width: 80%;
-  }
-  .advantages-box__images {
-    text-align: center;
-  }
-  .advantages-box {
-    justify-content: space-around;
-  }
-  .advantages-box--right .advantages-box__title {
-    padding: 30px 0 15px 20px;
-  }
-  .advantages-box--right .advantages-box__text {
-    padding-left: 20px;
-  }
-  .advantages-box--right .advantages-box__info {
-    padding-right: 30px;
-  }
-}
-@media (max-width: 924px) {
-  .advantages-box__info {
-    padding-top: 10px;
-  }
-  .advantages-box--right .advantages-box__info {
-    padding-top: 10px;
-  }
-  .advantages-box__images img {
-    width: 70%;
-    margin-top: 40px;
-  }
-}
-@media (max-width: 858px) {
-  .cover {
-    height: 400px;
-  }
-  .advantages-box__info {
-    max-width: 100%;
-  }
-  .advantages-box {
-    flex-wrap: wrap;
-    padding-bottom: 20px;
-  }
-  .advantages-box--right .advantages-box__info {
-    order: 0;
-  }
-  .advantages {
-    padding-top: 0;
-  }
-  .advantages-box__images img {
-    width: 100%;
-  }
-}
-@media (max-width: 570px) {
-  .advantages-box__title {
-    padding: 60px 0 15px 0;
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .advantages-box__text {
-    padding-left: 0;
-  }
-  .advantages-box--right .advantages-box__text {
-    padding-left: 0;
-  } 
-  .advantages-box--right .advantages-box__title {
-    padding: 30px 0 15px 0;
-  }
-}
-@media(max-width: 490px) { 
-  
-  .menu {
-    position: absolute;
-    right: -55%;
-  }
-  .runner {
-    width: 350px;
-    padding-top: 50px; 
-  }
-  .title-1 {
-            left: 65%;
-            top: 40%;
-  }
-  
-  .title-2 {
-            left: 30%;
-            top: 63%;
-  }
-  .box-2 {
-        top: 70%;
-  }
-  .box-3 {
-        top: 20%;
-        left: 95%;
-  }
-  .box-1 {
-        top: 45%;
-        left: 5%;
-  }
-  .content {
-        top: 70%;
-        left: 70%;
-        width: 90%;
-        padding: 15px;
-  }
-
-  .cover {
-    height: 300px;
-    max-width: 100%;
-  }
-  .card {
-    width: 84%;
-    height: 65%;
-    border: 10px solid white;
-    box-shadow: 0px 0px 5px #333;
-    position: absolute;
-    transition: all ease 1s;
-    left: 5%;
-    top: 25%;
-}   
-  
-}
-
-/**************************/
-textarea {
-    display: block;
-    width: 80%;
-    margin: 20px auto;
-}
-
-/*******************************/
 

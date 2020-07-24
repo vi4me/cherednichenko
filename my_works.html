@@ -5,35 +5,36 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Julie</title>
-      <link rel="stylesheet" href="css/index.css">
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/slick.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/media.css">
       <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 </head>
 <body>
-      <div class="wrapper">
+  <div class="container">
+      <div class="header__top">
+        <div class="logo"><a href="index.html">
+            <img src="http://pngimg.com/uploads/bicycle/bicycle_PNG5370.png" alt="">
+          </a></div>
+        <nav class="menu">
+          <div class="menu__btn">
+            <span>
+              
+            </span>
+          </div>
+          <ul class="menu__list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="my_works.html">Мои Работы</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
-            <div class="nav">
-                  <div class="logo"><ion-icon name="bicycle"></ion-icon></div>
-
-                  <div class="menu">
-                        <ul>
-                              <li><a href="index.html">Главная</a></li>
-                              <li><a href="my_works.html">Мои Работы</a></li>
-                              <li><a href="reviews.html">Отзывы</a></li>
-                        </ul>
-                  </div>
-            </div>   
-
-            <div class="media">
-                  <ul>
-                        <li><a href="https://www.facebook.com/ulichkacherednichenko"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li><a href="https://www.instagram.com/ulichka_cherednichenko/"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                        <li><a href="tel:+380967001106"><ion-icon name="call"></ion-icon></a></li>
-                        <li><a href="mailto:modern7jul@gmail.com"><ion-icon ios="ios-at" md="md-at"></ion-icon></a></li>
-                  </ul>
-            </div>    
-
-<div class="container" id="photo">
+<div class="photo_box" id="photo">
       <div class="cover">
 
       </div>
@@ -88,8 +89,17 @@ Developers
       </div>
     </div>
   </section>
-
-      <script type="text/javascript"></script>
+  <div class="media">
+    <ul>
+      <li><a href="https://www.facebook.com/ulichkacherednichenko"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      <li><a href="https://www.instagram.com/ulichka_cherednichenko/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      <li><a href="tel:+380967001106"><ion-icon name="call"></ion-icon></a></li>
+      <li><a href="mailto:modern7jul@gmail.com"><ion-icon ios="ios-at" md="md-at"></ion-icon></a></li>
+    </ul>
+  </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="js/slick.js"></script>
+      <script src="js/main.js"></script>
       <script src="js/index.js"></script>
 </body>
 </html>

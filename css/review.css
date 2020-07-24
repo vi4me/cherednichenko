@@ -35,7 +35,7 @@ body {
     margin: 0;
     padding: 0;
     background: var(--background);
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     font-family: 'Sree Krushnadevaraya', serif;
 }
@@ -1601,6 +1601,77 @@ body .pages input[type="radio"]:nth-of-type(4):checked + input + div + div + div
 }
 
 @media(max-width: 1000px) {
+    body .pages_page {
+    width: 100%;
+    display: block;
+    right: 0px;
+    height: 100%;
+    
+}
+
+.overlay {
+    display: none;
+}
+    body .pages {
+    width: 100% - var(--margin));
+    height: calc(100% - var(--margin));
+    display: block;
+}
+    body .pages_page__inner .control {
+    position: absolute;
+    z-index: 1;
+    width: 31px;
+    height: 31px;
+    border: 1px solid red;
+    border-radius: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    cursor: pointer;
+    transition: all .23s;
+    box-shadow: 0 0 0 0px #bf9726;
+}
+    body .pages_page__inner .control label {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+    body .pages_page__inner .content {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+body .pages_page__inner .content_centerimage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    text-align: center;
+    width: 60%;
+    transform: translateY(-50%);
+    max-width: 300px;
+}
+
+body .pages_page__inner .content_centerimage img {
+    width: 100%;
+}
+
+    .pagenumber {
+        display: none;
+    }
+    .content_center {
+        display: none;
+    }
+    .content_quote {
+        display: none;
+    }
+    .pagenumber {
+        display: none;
+    }
     body .pages_page:nth-of-type(1) .pages_page__inner .content_offset {
         width: 300px;
         padding-left: 30px;
@@ -1645,9 +1716,10 @@ body .pages input[type="radio"]:nth-of-type(4):checked + input + div + div + div
     }
 }
 @media(max-width: 800px) {
+      
       .menu {
         position: absolute;
-        right: 5%;
+        right: 35%;
       }
       .media{
         top: 35%;
@@ -1701,7 +1773,7 @@ body .pages input[type="radio"]:nth-of-type(4):checked + input + div + div + div
     right: -55%;
   }
   body .pages {
-         width: 150%;
+         width: 100%;
          height: 170%;
          padding-top: 45px;
   }
